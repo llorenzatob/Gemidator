@@ -20,7 +20,7 @@ mm.parseFile('drumloop.mp3', {native: true, duration:true})
 
 
 app.get('/', (req, res) => {
-    res.send(jsonObject)
+    console.log(__filename)
 })
 
 app.listen(3000 || env.process.port, () => {
